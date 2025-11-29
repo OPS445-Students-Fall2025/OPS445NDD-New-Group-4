@@ -8,11 +8,9 @@ Student number: 130300239
 import tarfile
 
 def restore(backup_file, restore_path):
-    #Purpose: To restore a compressed backup file
-    #Brainstorming: use subprocess.open like a1 to run tar cmd or use tarfile  or zipfile
-
-    tar = tarfile.open(backup_file, 'r') # Reads backup file
+    tar = tarfile.open(backup_file, 'r:*') # Reads backup file, :* means it open reading with any compression whether it's gipz, lzma, zip2, etc
     tar.extractall(path=restore_path) # extract tar (backup file), path= where the backup file gets extracted to
+    tar.close() # Closes archive
 
 
      
