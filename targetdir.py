@@ -35,9 +35,5 @@ def files_list(target_dir):
     # Return the list of file paths
     return files
 
-# demo :
-target_directory = os.path.expanduser("~/")  # Use home directory as default
-file_list = files_list(target_directory)
-print(file_list)
 
 
