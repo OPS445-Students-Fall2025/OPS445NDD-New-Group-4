@@ -21,4 +21,4 @@ def parse_command_args():
     parser.add_argument("--exclude", help="Subdirectory name to exclude (optional)")
      #subdirectory to skip if needed
     args = parser.parse_args() #read the arguments from the command line  
-    return args
+    return args
