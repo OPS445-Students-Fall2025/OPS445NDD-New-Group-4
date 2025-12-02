@@ -5,5 +5,8 @@ Author: Wayson Cao
 Student number: 130300239
 '''
 
-def exclude(par_dir, sub_dir):
-    # It should ask for parent directory, subdirectory to exclude
+# Checks a list of exclude instead from target directory, if sub directory have nothing return the list
+def exclude(file_list, sub_dir):
+    if sub_dir == None:
+        return file_list
+
